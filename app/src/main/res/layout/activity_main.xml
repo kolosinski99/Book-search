@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.MainActivity">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/main_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layoutDirection="rtl"
+        android:background="@drawable/search_view_bg"
+        android:backgroundTint="@color/project_dark"
+        android:layout_marginLeft="40dp"
+        app:queryBackground="@null"
+        android:queryHint="hint"
+        app:defaultQueryHint="hint"
+        android:iconifiedByDefault="false"
+        app:iconifiedByDefault="false"
+        android:layout_marginRight="40dp"
+        app:queryHint="@string/search_book"
+        app:theme="@style/AppSearchView"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_search"
+        android:clipToPadding="false"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        tools:listitem="@layout/book_item" />
+
+    <TextView
+        android:id="@+id/mainErrorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/dummy_error"
+        android:layout_centerInParent="true"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:textColor="@color/black"/>
+    <ProgressBar
+        android:id="@+id/main_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:indeterminateTint="@color/project_dark"/>
+</RelativeLayout>

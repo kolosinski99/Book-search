@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Book Search</string>
+    <string name="book_title">Aerodynamics</string>
+    <string name="book_author">Pablo Yakierish</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur sit amet lorem quis metus vehicula dignissim ut a dolor.
+        Praesent ultricies, mi pulvinar tristique maximus, ante sem vestibulum ipsum, ac lacinia leo lectus vitae libero.
+        Cras ac euismod justo. Integer dignissim pharetra facilisis.
+        Phasellus sagittis consectetur nisl.
+        Phasellus porttitor nulla lectus, at semper velit congue eu. Integer vel laoreet dui.
+        Fusce semper auctor dui, eu malesuada lorem lacinia eu.
+        Integer aliquet, lorem id auctor consequat, erat lorem tincidunt augue, a volutpat odio neque a urna.
+        Ut non erat gravida, ultricies sapien sit amet, scelerisque odio. Aenean ac est auctor, mollis diam et, mattis neque.
+        Vivamus tincidunt dui rutrum, mattis odio eu, eleifend ante.
+        Nulla dignissim ultricies erat eget maximus. Nam convallis accumsan aliquam.
+    </string>
+    <string name="search_book">Search Book</string>
+    <string name="dummy_error">404 Items not found!</string>
+</resources>
